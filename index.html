@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービスエキスパート認定試験 3級｜一般社団法人日本接客アドバイザー協会</title>
+<meta name="description" content="接客歴3年以上の方へ。サービスエキスパート認定試験3級は完全オンラインで受験できる接客スキルの認定資格です。申込締切は2027年1月10日正午、受験料5,500円（税込）。">
+<!-- 本番公開時に有効化する計測タグ（試作版では無効）
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WHFSVZ4GE"></script>
+Meta Pixel: サービスエキスパートLP データセットのベースコードをここに設置
+-->
+<style>
+  :root{
+    --navy:#14264c; --navy2:#1d3565; --gold:#b8912f; --gold-light:#f5ecd7;
+    --ink:#222; --gray:#666; --bg:#fff; --soft:#f6f7fa; --line:#e3e6ee;
+    --cta:#c0392b; --cta-dark:#a93226;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);line-height:1.8;background:var(--bg);-webkit-text-size-adjust:100%;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px;}
+  /* ファーストビュー */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:44px 0 40px;text-align:center;}
+  .hero .org{font-size:12px;letter-spacing:.12em;color:#cdb872;margin-bottom:14px;}
+  .hero h1{font-size:30px;line-height:1.45;font-weight:700;margin-bottom:10px;}
+  .hero h1 .gold{color:#e8cf8a;}
+  .hero .sub{font-size:16px;margin-bottom:24px;}
+  .facts{background:#fff;color:var(--ink);border-radius:12px;padding:20px 18px;text-align:left;max-width:560px;margin:0 auto 24px;box-shadow:0 6px 24px rgba(0,0,0,.25);}
+  .facts dl{display:grid;grid-template-columns:96px 1fr;row-gap:8px;font-size:15px;}
+  .facts dt{color:var(--navy);font-weight:700;}
+  .facts dd{font-weight:500;}
+  .facts .fee{font-size:20px;font-weight:700;color:var(--cta);}
+  .cta{display:inline-block;background:var(--cta);color:#fff;font-size:18px;font-weight:700;text-decoration:none;padding:16px 42px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+  .cta:active{background:var(--cta-dark);}
+  .hero .note{font-size:12px;color:#b9c2d8;margin-top:14px;}
+  /* セクション共通 */
+  section{padding:44px 0;}
+  section.alt{background:var(--soft);}
+  h2{font-size:22px;color:var(--navy);text-align:center;margin-bottom:8px;line-height:1.5;}
+  h2 + .lead{text-align:center;color:var(--gray);font-size:14px;margin-bottom:26px;}
+  .check{list-style:none;max-width:520px;margin:0 auto;}
+  .check li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line);font-size:16px;}
+  .check li::before{content:"✓";position:absolute;left:4px;color:var(--gold);font-weight:700;font-size:18px;}
+  .cards{display:grid;gap:14px;}
+  @media(min-width:640px){.cards{grid-template-columns:1fr 1fr;}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;}
+  .card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
+  .card p{font-size:14px;color:#444;}
+  .photo{text-align:center;}
+  .photo img{max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.12);}
+  .photo figcaption{font-size:12px;color:var(--gray);margin-top:8px;}
+  /* 流れ */
+  .steps{list-style:none;max-width:560px;margin:0 auto;counter-reset:step;}
+  .steps li{position:relative;padding:0 0 22px 52px;}
+  .steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:2px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:16px;}
+  .steps li::after{content:"";position:absolute;left:17px;top:44px;bottom:2px;width:2px;background:var(--line);}
+  .steps li:last-child::after{display:none;}
+  .steps b{color:var(--navy);}
+  .steps p{font-size:14px;color:#444;}
+  /* 級ステップ */
+  .ladder{max-width:560px;margin:0 auto;display:grid;gap:10px;}
+  .grade{border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:8px;padding:14px 18px;background:#fff;}
+  .grade.now{border-left-color:var(--cta);background:#fdf3f2;}
+  .grade .g-head{font-weight:700;color:var(--navy);font-size:16px;}
+  .grade .g-head .badge{display:inline-block;background:var(--cta);color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:2px;}
+  .grade p{font-size:14px;color:#444;}
+  /* FAQ */
+  .faq{max-width:620px;margin:0 auto;}
+  .faq details{border-bottom:1px solid var(--line);padding:14px 4px;}
+  .faq summary{font-weight:700;color:var(--navy);cursor:pointer;font-size:15px;}
+  .faq p{font-size:14px;color:#444;padding-top:8px;}
+  /* メッセージ・運営 */
+  .msg{max-width:620px;margin:0 auto;font-size:15px;}
+  .msg .prof{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;font-size:13px;color:#444;}
+  .org-info{text-align:center;font-size:13px;color:var(--gray);}
+  .org-info b{color:var(--navy);font-size:15px;}
+  /* 下部CTA */
+  .bottom-cta{background:var(--navy);color:#fff;text-align:center;padding:44px 0;}
+  .bottom-cta p{margin-bottom:18px;font-size:16px;}
+  footer{padding:22px 0;text-align:center;font-size:12px;color:var(--gray);}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="org">一般社団法人日本接客アドバイザー協会 認定資格</p>
+    <h1>「サービスのプロ」の証明<br><span class="gold">サービスエキスパート</span>認定試験 3級</h1>
+    <p class="sub">接客歴3年以上の方へ。あなたの接客スキルを、一生物の資格にしませんか。</p>
+    <div class="facts">
+      <dl>
+        <dt>申込締切</dt><dd>2027年1月10日（日）正午</dd>
+        <dt>回答期間</dt><dd>2027年1月22日（金）〜28日（木）</dd>
+        <dt>受験料</dt><dd><span class="fee">5,500円</span>（税込）</dd>
+        <dt>受験資格</dt><dd>試験日において接客業界3年以上従事（複数職場の合算可）</dd>
+        <dt>試験形式</dt><dd>完全オンライン（筆記はオープンブック／実技はロールプレイ動画提出）</dd>
+        <dt>合格特典</dt><dd>公式認定証と認定バッジ（SEバッジ）を発行</dd>
+      </dl>
+    </div>
+    <a class="cta" href="https://service-expert.hp.peraichi.com" target="_blank" rel="noopener">3級に申し込む</a>
+    <p class="note">アパレル・飲食・小売・宿泊・サロンなど、業種を問わず受験できます</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>1つでも当てはまる方へ</h2>
+    <p class="lead">現場で頑張るあなたの実力を、客観的に証明する資格です</p>
+    <ul class="check">
+      <li>接客は天職だと感じている</li>
+      <li>もっと良い接客を目指したい</li>
+      <li>今の接客力を証明したい</li>
+      <li>頑張っているのに評価されない</li>
+      <li>接客が売上に繋がっている実感がない</li>
+      <li>将来は接客指導を目指したい</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>試験はすべてオンラインで完結</h2>
+    <p class="lead">忙しいあなたも安心。自宅で受験できます</p>
+    <div class="cards">
+      <div class="card">
+        <h3>筆記試験（オープンブック）</h3>
+        <p>事前に配布されるテキスト（PDF）から出題。テキストを見ながら回答できる形式で、暗記ではなく「正しく理解できているか」を確認します。接客の基本原則・衛生知識・言葉遣いの知識問題と、現場での判断力を問う自由記述問題で構成されます。</p>
+      </div>
+      <div class="card">
+        <h3>実技試験（動画提出）</h3>
+        <p>提示されたお題に沿って、エアロールプレイ（お客様役なし）をスマホで撮影して提出。自宅の静かな一室で、固定カメラで撮影できます。笑顔・挨拶・所作に加え、「どこにこだわって接客したか」の解説も話していただきます。</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:18px;font-size:14px;color:#444;">試験期間は1週間あるので、都合の良い時間に回答できます。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>合格すると</h2>
+    <p class="lead">プロの実力を示す、公式認定証とSEバッジ</p>
+    <figure class="photo">
+      <img src="assets/cert.jpg" alt="サービスエキスパート認定証（見本）" width="768" height="543">
+      <figcaption>サービスエキスパート認定証（見本）</figcaption>
+    </figure>
+    <p style="max-width:620px;margin:20px auto 0;font-size:15px;">履歴書には「一般社団法人日本接客アドバイザー協会認定 サービスエキスパート3級」と正式に記入できます。合格後は協会への入会手続き（入会金11,000円・年会費13,200円、いずれも税込）を行っていただき、1ヶ月程度で認定証とバッジを発行します。</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>受験の流れ</h2>
+    <p class="lead">申込から認定証の発行まで</p>
+    <ol class="steps">
+      <li><b>申込フォームからエントリー</b><p>申込締切は2027年1月10日（日）正午です。</p></li>
+      <li><b>受験料のお支払い</b><p>エントリー後、3日以内にお支払いをお願いします。基本はStripeによるクレジットカード払い、カードをお持ちでない場合は銀行振込も可能です。</p></li>
+      <li><b>テキスト発行</b><p>ご入金の確認ができ次第、公式テキスト（PDF）を発行します。</p></li>
+      <li><b>試験（2027年1月22日〜28日）</b><p>回答フォームが解放されます。筆記への回答と、実技動画のURLを提出してください。</p></li>
+      <li><b>合否発表</b><p>受験締切から3週間程度で、メールにて発表します。</p></li>
+      <li><b>入会・認定証発行</b><p>合格後は協会への入会手続きを行っていただき、1ヶ月程度で認定証と認定バッジを発行します。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>3級から始まるステップアップ</h2>
+    <p class="lead">はじめて受験される方は3級から。段階的に進めます</p>
+    <div class="ladder">
+      <div class="grade now">
+        <p class="g-head">3級：基礎を身につけた接客人の証<span class="badge">申込受付中</span></p>
+        <p>受験料 5,500円（税込）。基本的な接客・衛生知識・言葉遣いを備え、「安心して現場を任せられる」実力を認定します。</p>
+      </div>
+      <div class="grade">
+        <p class="g-head">2級：現場で評価される接客人の証</p>
+        <p>受験料 22,000円（税込）／2027年実施予定。3級合格後1年以上が条件。客単価の向上や再来店を生み出し、お店の数字に貢献できる実力を認定します。</p>
+      </div>
+      <div class="grade">
+        <p class="g-head">1級：トップレベルの接客人の証</p>
+        <p>2028年実施予定。2級合格後1年以上が条件。「お店の顔」として感動レベルの体験を創造する最高峰のステージです。1級合格者は、指導者資格「接客アドバイザー3級」が免除され、2級から受験できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details>
+        <summary>履歴書に書けますか？</summary>
+        <p>はい。「一般社団法人日本接客アドバイザー協会認定 サービスエキスパート3級」と正式に記入いただけます。</p>
+      </details>
+      <details>
+        <summary>転職したばかりで、今の店舗は1年目です。受験できますか？</summary>
+        <p>はい。直近の職場の期間だけでなく、これまでの接客業の経験年数の「合算」で3年以上を満たしていれば受験可能です。</p>
+      </details>
+      <details>
+        <summary>実技試験はどのように行いますか？</summary>
+        <p>規定の課題に合わせたロールプレイング動画を提出していただきます。撮影場所に縛りはなく、ご自宅で撮影できます。</p>
+      </details>
+      <details>
+        <summary>支払い方法を教えてください</summary>
+        <p>基本的には決済サービス「Stripe」を利用したクレジットカード決済をお願いしています。カードをお持ちでない場合は銀行振込も可能ですので、お気軽にお申し付けください。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>代表理事メッセージ</h2>
+    <p class="lead">なぜサービスエキスパートを創設したのか</p>
+    <div class="msg">
+      <p>AIやDX化が進み、タブレット注文や無人レジが当たり前になりつつある現代。だからこそ、「あなたの接客を受けに来た」と言われるような、人にしかできない体温の通った接客の価値が高まっています。</p>
+      <p style="margin-top:12px;">現場で頑張るスタッフが正当に評価され、自信を持って輝ける「実践的な基準」が必要だ。その想いで、机上の空論ではなく「現場で本当に使えるスキル」を認定する制度を立ち上げました。</p>
+      <div class="prof">
+        <b>代表理事 阿部 大（あべ だい）</b><br>
+        飲食店コンサルティング 老舗計画株式会社 代表取締役。ホテルレストランのオープニングスタッフを経て、自身の飲食店を複数業態展開。2012年第7回S1サーバーグランプリ全国ファイナリスト（東北代表）。現在は年間200件以上の店舗コンサルティングや全国でのセミナーに登壇しています。
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bottom-cta">
+  <div class="wrap">
+    <p>申込締切は <b>2027年1月10日（日）正午</b> です</p>
+    <a class="cta" href="https://service-expert.hp.peraichi.com" target="_blank" rel="noopener">3級に申し込む（受験料5,500円）</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="org-info"><b>一般社団法人日本接客アドバイザー協会</b><br>
+    〒989-1242 宮城県柴田郡大河原町字西浦35-1（法人本部）／ TEL 022-775-9471 ／ MAIL info@jsaass.org<br>
+    ※試験実施は「老舗計画」に委託しております</p>
+  </div>
+</footer>
+
+</body>
+</html>
