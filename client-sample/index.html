@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仙台駅前 居酒屋 灯（あかり）｜ご予約・お問い合わせ</title>
+<meta name="description" content="仙台駅から徒歩5分。地元の魚と地酒が楽しめる小さな居酒屋。カウンター8席・テーブル20席・個室1室。ご予約はフォームからどうぞ。">
+<!--
+  ▼ 営業用サンプル：Googleフォーム差し込み手順 ▼
+  1. Googleフォームを作成し、「送信」→「リンク」からフォームURLを取得
+  2. このファイル内の FORM_URL という文字列を、取得したURLに置き換える（3か所）
+     - 申込ボタンの href（2か所）
+     - 埋め込み iframe の src（1か所、コメントアウトを外す）
+  3. 埋め込みを使わない場合は、iframe の代わりにプレースホルダのままでも可
+-->
+<style>
+  :root{
+    --ink:#2b2118; --accent:#a33c1f; --accent-dark:#8c3319; --gold:#c9a227;
+    --soft:#faf5ef; --line:#e7ddd2; --gray:#7a6f63;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);line-height:1.8;background:#fff;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px;}
+  .hero{position:relative;color:#fff;text-align:center;}
+  .hero img{width:100%;height:340px;object-fit:cover;display:block;filter:brightness(.62);}
+  .hero .hero-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 20px;}
+  .hero .area{font-size:12px;letter-spacing:.2em;color:#f0d9a8;margin-bottom:10px;}
+  .hero h1{font-size:32px;line-height:1.4;margin-bottom:10px;}
+  .hero .sub{font-size:15px;margin-bottom:20px;}
+  .cta{display:inline-block;background:var(--accent);color:#fff;font-size:17px;font-weight:700;text-decoration:none;padding:14px 40px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.35);}
+  .cta:active{background:var(--accent-dark);}
+  .facts{background:var(--soft);border-bottom:1px solid var(--line);}
+  .facts .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;padding-top:18px;padding-bottom:18px;font-size:14px;}
+  @media(min-width:640px){.facts .wrap{grid-template-columns:repeat(4,1fr);}}
+  .facts b{color:var(--accent);display:block;font-size:12px;letter-spacing:.08em;}
+  section{padding:42px 0;}
+  section.alt{background:var(--soft);}
+  h2{font-size:21px;text-align:center;margin-bottom:6px;}
+  h2 + .lead{text-align:center;color:var(--gray);font-size:14px;margin-bottom:24px;}
+  .photo img{width:100%;height:auto;border-radius:8px;display:block;}
+  .menu{max-width:560px;margin:0 auto;}
+  .menu li{list-style:none;display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:9px 2px;font-size:15px;}
+  .menu .price{font-weight:700;color:var(--accent);white-space:nowrap;padding-left:14px;}
+  .menu .desc{display:block;font-size:12px;color:var(--gray);}
+  .cards{display:grid;gap:14px;}
+  @media(min-width:640px){.cards{grid-template-columns:1fr 1fr 1fr;}}
+  .card{border:1px solid var(--line);border-radius:10px;padding:18px;background:#fff;}
+  .card h3{font-size:16px;color:var(--accent);margin-bottom:6px;}
+  .card p{font-size:14px;}
+  .formbox{border:2px dashed var(--gold);border-radius:12px;padding:26px 20px;text-align:center;background:#fffdf6;}
+  .formbox p{font-size:14px;color:var(--gray);margin-bottom:16px;}
+  .access{max-width:560px;margin:0 auto;font-size:15px;}
+  .access li{list-style:none;padding:7px 0;border-bottom:1px solid var(--line);}
+  .access b{display:inline-block;width:84px;color:var(--accent);}
+  footer{padding:24px 0;text-align:center;font-size:12px;color:var(--gray);background:var(--soft);}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/interior.jpg" alt="居酒屋 灯の店内（カウンター席）">
+  <div class="hero-text">
+    <p class="area">仙台駅から徒歩5分</p>
+    <h1>居酒屋 灯（あかり）</h1>
+    <p class="sub">地元の魚と地酒を、静かなカウンターで。<br>ご予約はフォームから24時間受け付けています</p>
+    <a class="cta" href="FORM_URL" target="_blank" rel="noopener">予約フォームを開く</a>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div><b>営業時間</b>17:00〜23:30（日曜定休）</div>
+    <div><b>席数</b>カウンター8席・テーブル20席・個室1室</div>
+    <div><b>ご予算</b>お一人様 4,000円前後</div>
+    <div><b>電話</b>022-XXX-XXXX</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>今夜のおすすめ</h2>
+    <p class="lead">市場直送の魚と、宮城の地酒を取りそろえています</p>
+    <figure class="photo" style="margin-bottom:24px;"><img src="assets/dish.jpg" alt="刺身盛り合わせと地酒"></figure>
+    <ul class="menu">
+      <li><span>本日の刺身盛り合わせ（3種）<span class="desc">その日一番の魚を市場から直送</span></span><span class="price">1,480円</span></li>
+      <li><span>金華さばの〆さば<span class="desc">脂ののった石巻産。数量限定</span></span><span class="price">980円</span></li>
+      <li><span>牛たん炭火焼き<span class="desc">仙台の定番を厚切りで</span></span><span class="price">1,680円</span></li>
+      <li><span>季節のおばんざい盛り<span class="desc">女将の手作り3種盛り</span></span><span class="price">880円</span></li>
+      <li><span>地酒 飲み比べセット<span class="desc">宮城の地酒3種（各60ml）</span></span><span class="price">1,200円</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>席のご案内</h2>
+    <p class="lead">少人数の宴会や接待にもどうぞ</p>
+    <div class="cards">
+      <div class="card"><h3>カウンター 8席</h3><p>お一人様でも気軽に。料理人の手仕事を眺めながら一杯どうぞ。</p></div>
+      <div class="card"><h3>テーブル 20席</h3><p>ご家族やご友人との食事に。4名様までのテーブルが中心です。</p></div>
+      <div class="card"><h3>個室 1室（〜6名）</h3><p>接待や記念日に。個室は予約制ですので、お早めにご連絡ください。</p></div>
+    </div>
+    <p style="text-align:center;margin-top:16px;font-size:14px;">宴会コースは4名様から、飲み放題付き 5,500円〜ご用意しています。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>ご予約・お問い合わせ</h2>
+    <p class="lead">フォーム送信後、お店から確認のご連絡をいたします</p>
+    <div class="formbox">
+      <p>ここにGoogleフォームが入ります（埋め込み表示）<br>ボタンからフォームを開く形でも利用できます</p>
+      <!-- フォームURLが決まったら、下の iframe のコメントアウトを外し、src の FORM_URL を置き換えてください
+      <iframe src="FORM_URL" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border:0;border-radius:8px;">読み込んでいます…</iframe>
+      -->
+      <a class="cta" href="FORM_URL" target="_blank" rel="noopener">予約フォームを開く</a>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--gray);margin-top:14px;">お急ぎの場合はお電話でどうぞ：022-XXX-XXXX（17:00〜23:30）</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>アクセス</h2>
+    <ul class="access">
+      <li><b>住所</b>宮城県仙台市青葉区中央X-X-X（仙台駅西口から徒歩5分）</li>
+      <li><b>営業時間</b>17:00〜23:30（ラストオーダー 22:45）</li>
+      <li><b>定休日</b>日曜日</li>
+      <li><b>電話</b>022-XXX-XXXX</li>
+      <li><b>支払い</b>現金・各種クレジットカード・QR決済</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>居酒屋 灯（あかり）｜仙台駅前<br>※このページは営業用サンプルです（店名・内容は架空のものです）</p>
+  </div>
+</footer>
+
+</body>
+</html>
